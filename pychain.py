@@ -45,12 +45,12 @@ import hashlib
 # 5. Add an attribute named `amount` of type `float`.
 # Note that you’ll use this new `Record` class as the data type of your `record` attribute in the next section.
 
-
-# @TODO
-# Create a Record Data Class that consists of the `sender`, `receiver`, and
-# `amount` attributes
-# YOUR CODE HERE
-
+# Create a Record Data Class that consists of the `sender`, `receiver`, and `amount` attributes
+@dataclass
+class Record:
+    sender: str
+    receiver: str
+    amount: float
 
 ################################################################################
 # Step 2:
