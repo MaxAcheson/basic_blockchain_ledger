@@ -163,7 +163,7 @@ pychain = setup()
 # 5. As part of the Add Block button functionality, update `new_block` so that `Block` consists of an attribute named `record`, which is set equal to a `Record` that contains the `sender`, `receiver`, and `amount` values. The updated `Block`should also include the attributes for `creator_id` and `prev_hash`.
 
 # Delete the `input_data` variable from the Streamlit interface.
-input_data = st.text_input("Block Data")
+#input_data = st.text_input("Block Data")
 
 # Add an input area where you can get a value for `sender` from the user.
 sender = st.text_input('Sender')
@@ -183,7 +183,6 @@ if st.button("Add Block"):
     # and `amount` values
     new_block = Block(
         record=Record(sender, receiver, amount),
-        data=input_data,
         creator_id=42,
         prev_hash=prev_block_hash
     )
